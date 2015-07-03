@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Traveler's diary</title>
+	<link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
+	<link rel="stylesheet" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+
+<body>
+
+<div id="title">
+	<h1>Traveler's diary</h1>
+</div>
+
+
+<div id="navi">
+	<ul>
+		<a href="index.html"> <li>Home</li></a>
+		<a href="gallery.html"> <li>Gallery</li></a>
+		<a href="tips.html"> <li>Tips and Ideas</li></a>
+		<a href="contact.html"> <li>Contact</li></a>
+	</ul>
+</div>
+</div>
+
+
+
+<div class="cover">
+	<img src="images/beachCover.jpg" height="500px" width="900px">
+</div>
+
+
+<div class="line">
+	<h2>Featured Destinations</h2>
+</div>
+
+<a href="tips.html"> <h1 id="featuredNames">Curacao</h1> </a>
+<a href="tips.html"> <h1 id="featuredNames2">Sweden</h1> </a>
+<a href="tips.html"> <h1 id="featuredNames3">Malaysia</h1> </a>
+<a href="tips.html"> <h1 id="featuredNames4">St. Lucia</h1> </a>
+<a href="tips.html"> <h1 id="featuredNames5">Italy</h1> </a>
+
+
+
+<div id="pics">
+	<img id="pic1" src="images/curacao.jpg" width="275px" height="250px">
+	<img id="pic2" src="images/sweden.png" width="275px" height="250px">
+	<img id="pic3" src="images/kuala.jpg" width="275px" height="250px">
+	<img id="pic4" src="images/lucia.jpg" width="275px" height="250px">
+	<img id="pic5" src="images/Barrea.jpg" width="275px" height="250px">
+		
+</div>
+
+
+
+
+<div id="footer">
+	<div id="social">
+	<div id="one">
+		<a href="http://www.facebook.com"><img src="Icons/Facebook.png"></a>
+	</div>
+	<div id="two">
+		<a href="http://www.twitter.com"><img src="Icons/Twitter.png"></a>
+	</div>
+	<div id="three">
+		<a href="http://www.instagram.com"><img src="Icons/Instagram.png"></a>
+	</div>
+	<div id="four">
+		<a href="http://www.Pinterest.com"><img src="Icons/Tumblr.png"></a>
+	</div>
+</div>
+
+</div>
+
+	
+
+<script>
+	$(document).ready(function() {
+
+		//$("#pic1, #pic2, #pic3, #pic4, #pic5").mouseover(function() {
+		//	$(this).css("opacity", "0.5");
+		//	$("#featuredNames").fadeIn();
+		//});
+
+		$("#pic1").mouseover(function() {
+			$(this).css("opacity", "0.5");
+			$("#featuredNames").fadeIn();
+		});
+
+		$("#pic2").mouseover(function() {
+			$(this).css("opacity", "0.5");
+			$("#featuredNames2").fadeIn();
+		});
+
+		$("#pic3").mouseover(function() {
+			$(this).css("opacity", "0.5");
+			$("#featuredNames3").fadeIn();
+		});
+
+		$("#pic4").mouseover(function() {
+			$(this).css("opacity", "0.5");
+			$("#featuredNames4").fadeIn();
+		});
+
+		$("#pic5").mouseover(function() {
+			$(this).css("opacity", "0.5");
+			$("#featuredNames5").fadeIn();
+		});
+
+
+
+		$("#pic1, #pic2, #pic3, #pic4, #pic5").mouseleave(function() {
+			$(this).css("opacity","1" );
+		});
+
+	});
+
+</script>
+
+
+</body>
+</html>

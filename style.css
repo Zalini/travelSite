@@ -1,0 +1,115 @@
+/*For all pages*/
+
+@font-face {
+	font-family: caviar;
+	src: url(caviar/CaviarDreams_Bold.ttf);
+}
+
+@font-face {
+	font-family: caviarItalic;
+	src: url(caviar/CaviarDreams_Italic.ttf);
+}
+
+body {
+	font-family: caviar;
+
+}
+
+#title {
+	font-family: caviar;
+	font-size: 1.5em;
+	color: #213F4F;
+	background-color: rgba(38, 194, 204, 0.2);
+	padding: 5px;
+}
+
+#navi {
+	font-family: caviarItalic;
+	margin-top: 20px;
+	display: inline-block;
+}
+
+a {
+	list-style: none;
+	text-decoration: none;
+	color: #1E718C;
+}
+
+a:hover {
+	color: #7CD6D2;
+}
+
+#footer {
+	background-color: rgba(47, 66, 65, 0.5);
+	margin-top: 60px;
+}
+
+#footer img {
+	width: 40px;
+	height: 40px;
+}
+
+
+
+/*Homepage*/
+.cover {
+	width: 900px;
+	margin: 0 auto;
+	opacity: .7;
+}
+
+.line {
+	height: 2px;
+	width: 850px;
+	margin: 0 auto;
+	background: black;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.line h2 {
+	text-align: center;
+	font-family: caviar;
+}
+
+#pics {
+	padding:0px;
+	margin:0px;
+}
+
+#featuredNames {
+	color: black;
+	margin-left: 30px;
+	display: none;
+}
+
+#featuredNames2 {
+	color: black;
+	margin-left: 130px;
+	display: none;
+}
+
+#featuredNames3 {
+	color: black;
+	margin-left: 230px;
+	display: none;
+}
+
+#featuredNames4 {
+	color: black;
+	margin-left: 330px;
+	display: none;
+}
+
+#featuredNames5 {
+	color: black;
+	margin-left: 430px;
+	display: none;
+}
+
+
+/*Tips*/
+
+
+
+/*Gallery*/
