@@ -4,12 +4,16 @@
 	<meta charset="UTF-8">
 	<title>Traveler's diary</title>
 	<link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
+	<link rel="stylesheet" href="bootstrap.css">
 	<link rel="stylesheet" href="style.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="jQuery.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
 </head>
 
-<body>
 
+
+<body>
 <div id="title">
 	<h1>Traveler's diary</h1>
 </div>
@@ -20,15 +24,12 @@
 		<a href="index.html"> <li>Home</li></a>
 		<a href="gallery.html"> <li>Gallery</li></a>
 		<a href="tips.html"> <li>Tips and Ideas</li></a>
-		<a href="contact.html"> <li>Contact</li></a>
 	</ul>
 </div>
-</div>
-
 
 
 <div class="cover">
-	<img src="images/beachCover.jpg" height="500px" width="900px">
+	<h1>Time for Adventure</h1>
 </div>
 
 
@@ -36,12 +37,13 @@
 	<h2>Featured Destinations</h2>
 </div>
 
+
 <div class="names">
-<a href="tips.html"> <h1 id="featuredNames">Curacao</h1> </a>
-<a href="tips.html"> <h1 id="featuredNames2">Sweden</h1> </a>
-<a href="tips.html"> <h1 id="featuredNames3">Malaysia</h1> </a>
-<a href="tips.html"> <h1 id="featuredNames4">St. Lucia</h1> </a>
-<a href="tips.html"> <h1 id="featuredNames5">Italy</h1> </a>
+	<h1 id="featuredNames">Curaçao</h1> 
+	<h1 id="featuredNames2">Sweden</h1> 
+	<h1 id="featuredNames3">Malaysia</h1> 
+  	<h1 id="featuredNames4">St. Lucia</h1> 
+	<h1 id="featuredNames5">Italy</h1>
 </div>
 
 
@@ -64,10 +66,14 @@
 	<a href="#malay"><img id="pic3" src="images/kuala.jpg" /> </a>
 	<!--	<div class="imgcap">Malaysia</div> -->
 	</div>
+
+
 	<div class="box">
 		<img id="pic4" src="images/lucia.jpg" />
 	<!--	<div class="imgcap">St. Lucia</div> -->
 	</div>
+
+
 	<div class="box">
 		<img id="pic5" src="images/Barrea.jpg" />
 	<!--	<div class="imgcap">Italy</div> -->
@@ -129,10 +135,10 @@
 <script>
 	$(document).ready(function() {
 
-		$("#pic1, #pic2, #pic3, #pic4, #pic5").mouseover(function() {
-			$(this).css("opacity", "0.5");
-			$("#featuredNames").fadeIn();
-		});
+		//$("#pic1, #pic2, #pic3, #pic4, #pic5").mouseover(function() {
+		//	$(this).css("opacity", "0.5");
+		//	$("#featuredNames").fadeIn();
+	//	});
 
 		//$(".imgcap").mouseover(function(){
 		//	$(this).fadeOut();
