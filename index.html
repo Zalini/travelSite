@@ -36,23 +36,73 @@
 	<h2>Featured Destinations</h2>
 </div>
 
+<div class="names">
 <a href="tips.html"> <h1 id="featuredNames">Curacao</h1> </a>
 <a href="tips.html"> <h1 id="featuredNames2">Sweden</h1> </a>
 <a href="tips.html"> <h1 id="featuredNames3">Malaysia</h1> </a>
 <a href="tips.html"> <h1 id="featuredNames4">St. Lucia</h1> </a>
 <a href="tips.html"> <h1 id="featuredNames5">Italy</h1> </a>
-
+</div>
 
 
 <div id="pics">
-	<img id="pic1" src="images/curacao.jpg" width="275px" height="250px">
-	<img id="pic2" src="images/sweden.png" width="275px" height="250px">
-	<img id="pic3" src="images/kuala.jpg" width="275px" height="250px">
-	<img id="pic4" src="images/lucia.jpg" width="275px" height="250px">
-	<img id="pic5" src="images/Barrea.jpg" width="275px" height="250px">
-		
+	<div class="box">
+		<a href="#swiggity"><img id="pic1" src="images/curacao.jpg" />
+		<!--<div class="imgcap">Curaçao</div> -->
+		</a>
+
+	</div>
+	
+
+	<div class="box">
+		<a href="#swdn"><img id="pic2" src="images/sweden.png" /> </a>
+		<!--<div class="imgcap">Sweden</div>-->
+	</div>
+	
+
+	<div class="box">
+	<a href="#malay"><img id="pic3" src="images/kuala.jpg" /> </a>
+	<!--	<div class="imgcap">Malaysia</div> -->
+	</div>
+	<div class="box">
+		<img id="pic4" src="images/lucia.jpg" />
+	<!--	<div class="imgcap">St. Lucia</div> -->
+	</div>
+	<div class="box">
+		<img id="pic5" src="images/Barrea.jpg" />
+	<!--	<div class="imgcap">Italy</div> -->
+	</div>
+	
 </div>
 
+
+<div id="content">
+<div class="contentspace">
+<a id="swiggity"><h1>Curaçao</h1></a>
+		<p>Home to more than 35 captivating beaches, a diverse heritage spanning 55 different cultures, 'live and let live' attitude and unrivaled European architecture; Curaçao remains one of the most exceptional islands of the region. Its capital city, Willemstad — a UNESCO World Heritage site — with its iconic colorful Handelskade backdrop and roster of museums, monuments, flavorful restaurants and shopping, was selected in 2013 as one of the Top 5 Cities in the Caribbean by Condé Nast Traveler's readers.  Curaçao's natural beauty, pristine diving and snorkeling sites are a favorite with divers and adventure seekers, and its beaches and idyllic weather, situated on the outer fringes of the Hurricane Belt, has won it further accolade and recognition.
+	</p>
+</div>
+
+<div class="contentspace">
+	<a id="swdn"><h1>Sweden</h1></a>
+		<p>In some ways, visiting Sweden feels like walking right into a fashion or home-decor magazine. There are no boring outfits on the streets of Stockholm, and the care with which houses, cottages, cafes and public spaces are decorated and kept up throughout the country is truly inspiring. But Swedish style is never too showy; form and function are tightly linked in this society known for valuing moderation, practicality, order, simple lines and clever designs. Whether you decide to shop for your own versions or just enjoy the scenery, it’s hard not to fall for the cool aesthetics of this place.
+	</p>
+</div>
+
+<div class="contentspace">
+	<a id="malay"><h1>Malaysia</h1></a>
+		<p>To know Malaysia is to love Malaysia - a bubbling, bustling melting-pot of races and religions where Malays, Indians, Chinese and many other ethnic groups live together in peace and harmony. Our multiculturalism has made Malaysia a gastronomical paradise and home to hundreds of colourful festivals. It's no wonder that we love celebrating and socialising. As a people, Malaysians are very relaxed, warm and friendly. 
+
+		Geographically, Malaysia is almost as diverse as its culture. 11 states and 2 federal territories (Kuala Lumpur and Putrajaya) form Peninsular Malaysia which is separated by the South China Sea from East Malaysia which includes the 2 states (Sabah and Sarawak on the island of Borneo) and a third federal territory, the island of Labuan. 
+
+		One of Malaysia's key attractions is its extreme contrasts which further add to this theme of 	‘diversity’. Towering skyscrapers look down upon wooden houses built on stilts while five-star hotels sit just metres away from ancient reefs. 
+
+		Rugged mountains reach dramatically for the sky while their rainforest-clad slopes sweep down to floodplains teeming with forest life. Cool highland hideaways roll down to warm, sandy beaches and rich, humid mangroves. 
+	</p>
+</div>
+
+
+</div>
 
 
 
@@ -79,35 +129,39 @@
 <script>
 	$(document).ready(function() {
 
-		//$("#pic1, #pic2, #pic3, #pic4, #pic5").mouseover(function() {
-		//	$(this).css("opacity", "0.5");
-		//	$("#featuredNames").fadeIn();
-		//});
-
-		$("#pic1").mouseover(function() {
+		$("#pic1, #pic2, #pic3, #pic4, #pic5").mouseover(function() {
 			$(this).css("opacity", "0.5");
 			$("#featuredNames").fadeIn();
 		});
 
-		$("#pic2").mouseover(function() {
-			$(this).css("opacity", "0.5");
-			$("#featuredNames2").fadeIn();
-		});
+		//$(".imgcap").mouseover(function(){
+		//	$(this).fadeOut();
+		//});
 
-		$("#pic3").mouseover(function() {
-			$(this).css("opacity", "0.5");
-			$("#featuredNames3").fadeIn();
-		});
+		 $("#pic1").mouseover(function() {
+		 	$(this).css("opacity", "0.5");
+		 	$("#featuredNames").fadeIn();
+		 });
 
-		$("#pic4").mouseover(function() {
-			$(this).css("opacity", "0.5");
+		 $("#pic2").mouseover(function() {
+		 	$(this).css("opacity", "0.5");
+		 	$("#featuredNames2").fadeIn();
+		 });
+
+		 $("#pic3").mouseover(function() {
+		 	$(this).css("opacity", "0.5");
+		 	$("#featuredNames3").fadeIn();
+		 });
+
+		 $("#pic4").mouseover(function() {
+		 	$(this).css("opacity", "0.5");
 			$("#featuredNames4").fadeIn();
-		});
+		 });
 
-		$("#pic5").mouseover(function() {
-			$(this).css("opacity", "0.5");
-			$("#featuredNames5").fadeIn();
-		});
+		 $("#pic5").mouseover(function() {
+		 	$(this).css("opacity", "0.5");
+		 	$("#featuredNames5").fadeIn();
+		 });
 
 
 

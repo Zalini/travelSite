@@ -40,13 +40,14 @@ a:hover {
 }
 
 #footer {
-	background-color: rgba(47, 66, 65, 0.5);
+	clear:both;
+	background-color: rgba(244, 240, 12, 0.3);
 	margin-top: 60px;
 }
 
 #footer img {
-	width: 40px;
-	height: 40px;
+	width: 30px;
+	height: 30px;
 }
 
 
@@ -70,12 +71,65 @@ a:hover {
 .line h2 {
 	text-align: center;
 	font-family: caviar;
+
 }
 
-#pics {
-	padding:0px;
-	margin:0px;
+
+#pics{
+	position:relative;
+	margin:0 auto;
+
 }
+
+.box{
+	display:inline-block;
+	width:275px; 
+	height:250px;
+	display:inline-block;
+	margin-right:5px;
+}
+
+
+
+
+.box img{
+	position:absolute;
+	z-index:1;
+	width:275px; 
+	height:250px;
+}
+
+/*
+.imgcap{
+	position:absolute; 
+	z-index:10; 
+	background:rgba(0, 0, 0, 0.6);
+	width:275px; 
+	height:250px;
+	color: white;
+	font-size: 18px;
+	text-align: center;
+}
+
+*/
+
+
+#content  {
+	font-size: 20px;
+	width: 900px;
+	margin: 0 auto;
+	padding-top: 100px;
+}
+
+#content h1 {
+	font-size: 40px;
+}
+
+.contentspace{
+
+	margin-top: 100px;
+}
+
 
 #featuredNames {
 	color: black;
@@ -85,25 +139,25 @@ a:hover {
 
 #featuredNames2 {
 	color: black;
-	margin-left: 130px;
+	margin-left: 330px;
 	display: none;
 }
 
 #featuredNames3 {
 	color: black;
-	margin-left: 230px;
+	margin-left: 630px;
 	display: none;
 }
 
 #featuredNames4 {
 	color: black;
-	margin-left: 330px;
+	margin-left: 930px;
 	display: none;
 }
 
 #featuredNames5 {
 	color: black;
-	margin-left: 430px;
+	margin-left: 1230px;
 	display: none;
 }
 
