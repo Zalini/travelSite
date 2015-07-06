@@ -19,6 +19,11 @@
 </div>
 
 
+<header>
+	<button class="btn">&#9776;</button>
+	<button class="exit">&#735;</button>
+</header>
+
 <div id="navi">
 	<ul>
 		<a href="index.html"> <li>Home</li></a>
@@ -99,41 +104,49 @@
 	<a id="malay"><h1>Malaysia</h1></a>
 		<p>To know Malaysia is to love Malaysia - a bubbling, bustling melting-pot of races and religions where Malays, Indians, Chinese and many other ethnic groups live together in peace and harmony. Our multiculturalism has made Malaysia a gastronomical paradise and home to hundreds of colourful festivals. It's no wonder that we love celebrating and socialising. As a people, Malaysians are very relaxed, warm and friendly. 
 
-		Geographically, Malaysia is almost as diverse as its culture. 11 states and 2 federal territories (Kuala Lumpur and Putrajaya) form Peninsular Malaysia which is separated by the South China Sea from East Malaysia which includes the 2 states (Sabah and Sarawak on the island of Borneo) and a third federal territory, the island of Labuan. 
-
 		One of Malaysia's key attractions is its extreme contrasts which further add to this theme of 	‘diversity’. Towering skyscrapers look down upon wooden houses built on stilts while five-star hotels sit just metres away from ancient reefs. 
 
 		Rugged mountains reach dramatically for the sky while their rainforest-clad slopes sweep down to floodplains teeming with forest life. Cool highland hideaways roll down to warm, sandy beaches and rich, humid mangroves. 
 	</p>
 </div>
-
-
 </div>
 
 
 
 <div id="footer">
 	<div id="social">
-	<div id="one">
-		<a href="http://www.facebook.com"><img src="Icons/Facebook.png"></a>
+		<div id="one">
+			<a href="http://www.facebook.com"><img src="Icons/Facebook.png"></a>
+		</div>
+		<div id="two">
+			<a href="http://www.twitter.com"><img src="Icons/Twitter.png"></a>
+		</div>
+		<div id="three">
+			<a href="http://www.instagram.com"><img src="Icons/Instagram.png"></a>
+		</div>
+		<div id="four">
+			<a href="http://www.Pinterest.com"><img src="Icons/Tumblr.png"></a>
+		</div>
 	</div>
-	<div id="two">
-		<a href="http://www.twitter.com"><img src="Icons/Twitter.png"></a>
-	</div>
-	<div id="three">
-		<a href="http://www.instagram.com"><img src="Icons/Instagram.png"></a>
-	</div>
-	<div id="four">
-		<a href="http://www.Pinterest.com"><img src="Icons/Tumblr.png"></a>
-	</div>
-</div>
-
 </div>
 
 	
 
 <script>
 	$(document).ready(function() {
+		$( ".btn" ).click(function() {
+		$( "#navi" ).slideToggle();
+			$( ".btn" ).hide();
+			$( ".exit" ).show();
+	});
+	
+		$( ".exit" ).click(function() {
+		$( "#navi" ).slideToggle();
+			$( ".exit" ).hide();
+			$( ".btn" ).show();
+	});
+
+
 
 		//$("#pic1, #pic2, #pic3, #pic4, #pic5").mouseover(function() {
 		//	$(this).css("opacity", "0.5");
@@ -169,12 +182,9 @@
 		 	$("#featuredNames5").fadeIn();
 		 });
 
-
-
 		$("#pic1, #pic2, #pic3, #pic4, #pic5").mouseleave(function() {
 			$(this).css("opacity","1" );
 		});
-
 	});
 
 </script>
