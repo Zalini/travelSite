@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="bootstrap.css">
 	<link rel="stylesheet" href="style.css">
 	<script src="jQuery.js"></script>
+	<script src="FlexSlider/jquery.flexslider.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
 </head>
@@ -27,8 +28,8 @@
 <div id="navi">
 	<ul>
 		<a href="index.html"> <li>Home</li></a>
-		<a href="gallery.html"> <li>Gallery</li></a>
-		<a href="tips.html"> <li>Tips and Ideas</li></a>
+		<a href="#gallery"> <li>Gallery</li></a>
+		<a href="#tipsline"> <li>Travel Tips</li></a>
 	</ul>
 </div>
 
@@ -39,7 +40,7 @@
 
 
 <div class="line">
-	<h2>Featured Destinations</h2>
+	<a id="gallery"><h2>Featured Destinations</h2>
 </div>
 
 
@@ -55,33 +56,27 @@
 <div id="pics">
 	<div class="box">
 		<a href="#swiggity"><img id="pic1" src="images/curacao.jpg" />
-		<!--<div class="imgcap">Curaçao</div> -->
 		</a>
-
 	</div>
 	
 
 	<div class="box">
 		<a href="#swdn"><img id="pic2" src="images/sweden.png" /> </a>
-		<!--<div class="imgcap">Sweden</div>-->
 	</div>
 	
 
 	<div class="box">
 	<a href="#malay"><img id="pic3" src="images/kuala.jpg" /> </a>
-	<!--	<div class="imgcap">Malaysia</div> -->
 	</div>
 
 
 	<div class="box">
-		<img id="pic4" src="images/lucia.jpg" />
-	<!--	<div class="imgcap">St. Lucia</div> -->
+		<a href="#lucia"><img id="pic4" src="images/lucia.jpg" /> </a>
 	</div>
 
 
 	<div class="box">
-		<img id="pic5" src="images/Barrea.jpg" />
-	<!--	<div class="imgcap">Italy</div> -->
+		<a href="#italia"><img id="pic5" src="images/Barrea.jpg" />
 	</div>
 	
 </div>
@@ -109,6 +104,91 @@
 		Rugged mountains reach dramatically for the sky while their rainforest-clad slopes sweep down to floodplains teeming with forest life. Cool highland hideaways roll down to warm, sandy beaches and rich, humid mangroves. 
 	</p>
 </div>
+
+<div class="contentspace">
+	<a id="lucia"><h1>St. Lucia</h1></a>
+		<p>Where can you wake up to a symphony of birds and drive through a volcano? Only on St. Lucia island! St. Lucia stands apart from the rest of the Caribbean islands thanks to its varied landscape and diverse culture and cuisine, which is distinguished by African, Indian, Caribbean, British, Spanish and French influences. You can explore everything from the Piton Mountains and rainforest to the Sulphur Springs of Soufriere and the Caribbean coral reef on this 238 square-mile island in paradise. There are so many reasons to choose St. Lucia island!
+		 The active traveler can snorkel in the refreshing Caribbean Sea, hike to the top of the Gros Piton or Petite Piton peaks, or take advantage of a wide range of water sports available at their St. Lucia Resort. The foodie can indulge in fresh local flavors by stopping at roadside stands or dining at five-star restaurants. Romantic couples can relax on the white sand of a pristine beach or in a mud bath before going on a one-of-a-kind date at one of St. Lucia’s music or cultural festivals.  Whatever your preference, your St. Lucia island vacation will be nothing but smooth sailing!	</p>
+</div>
+
+<div class="contentspace">
+	<a id="italia"><h1>Italy</h1></a>
+		<p>Italy is the kind of destination that travelers return to over and over. They come for awe-inspiring art and architecture that influenced Western civilization, and stunning historical ruins—as well as for some of the world's best food and wine. Also beckoning irresistibly are Italy's sun-kissed olive groves and vineyards, the sparkling waters of Lake Como and the Mediterranean, and atmospheric monasteries, castles, and farmhouses. And if you seek vibrant cities with renowned museums, restaurants, and shopping opportunities, Rome, Florence, and Milan await.</p>
+</div>
+</div>
+
+
+<div class="line">
+	<a id="tipsline"><h2> 5 great Travel Tips!</h2>
+</div>
+
+
+<div id="background">
+<div class="flexslider">
+	<ul class="slides">
+		<li><h2>Consider Reviews </h2><img src ="images/citysearch.png" width="450px" height="450px"/>
+			<p class="caption">User-review sites have changed the way most people plan their travel, giving us an enormously useful tool for evaluating hotels, restaurants, tourist attractions and the like. TripAdvisor.com is the big kahuna, with more than 20 million reviews, mostly of hotels — but also less traditional lodging like B and Bs, villas and private homes — as well as restaurants and attractions. TravelPost.com is another, owned by Kayak.com and recently relaunched; like its airfare-aggregating parent, TravelPost.com collects reviews from various websites, such as Citysearch.com, Yahoo! Travel and IgoUgo.com. Check out Yelp.com for locals' takes on restaurants, shops and other businesses, or OpenTable.com, which guarantees that reviewers have actually eaten at the restaurants they rate.
+			</p>
+		</li>
+			
+		<li> <h2>Visit Travel Forums </h2><img src ="images/comp.jpg" width="450px" height="450px"/>
+			<p class="caption">
+			Years ago, travel forums — in which users answer other users' questions — were hit or miss, with too many crackpots dominating the conversation. Certain forums, however, have matured to the point that you'd be unwise to ignore them. Forums like those on TripAdvisor.com, Fodors.com, Frommers.com and LonelyPlanet.com all handle destination advice well. But bear in mind that sites attract different kinds of travelers: Fodors users can skew older and wealthier, for example, while the Lonely Planet fan is typically younger and more likely to rough it.
+			Also check out CruiseCritic.com for a cruise lowdown, FlyerTalk.com for air travel, Chowhound.com and Roadfood.com for dining and Superfuture.com for a little bit of everything, especially cutting-edge design and shopping.
+			</p>
+		</li>
+			
+		<li><h2>Read Travel Blogs </h2>	<img src ="images/blogger.jpg" width="450px" height="450px"/>
+			<p class="caption">
+			Every major city has bloggers who are obsessed with what's new and great in their backyard, particularly in regard to 	restaurants. You can use Google Blog Search to find bloggers in whatever city you're visiting. They're a phenomenal resource, but don't just read what they're writing: Contact them for personal recommendations. The more specific your request — and the more you flatter them for their insight and wit — the more likely you'll be to pique their interest and get a response. ("What's your favorite vegetarian-friendly restaurant within walking distance of the InterContinental Hotel on Howard Street? We're looking for a place with a romantic vibe, ideally, because it's our anniversary. We'd be so grateful for your help, because you obviously know what's going on in San Francisco!")
+			</p>
+		</li>
+	
+		<li><h2>Pack light</h2><img src ="images/light.jpg" width="450px" height="450px"/>
+			<p class="caption">
+			The goal is to pack with one bag. As much as possible, pre-plan your itinerary, figure out the specific items you'll need for your trip and stick to that list — if you start contemplating what to bring the night before you take off, you're doomed. But packing light doesn't have to mean going without. Just be strategic about what you bring. Mix and match everything, so you can coordinate more outfits with fewer clothes. If you pack all neutral pants or skirts, for example, you can use your patterned tops with any and all bottoms. Remember also that layering for colder weather is always better than bringing big, bulky pieces; on hot-weather trips, include a light sweater or jacket. Shoes are the big space hog, so limit yourself to two pairs (and don't forget that you can pack socks or other small goods inside your shoes). Ditch your toiletry bag, since you'll have to put all your stuff in a Ziploc bag to get through security anyway. And finally, remember the frequent-flyer's best friend: wrinkle-free everything.
+			</p>
+		</li>
+	
+		<li><h2>Bring these essentials</h2><img src ="images/guy.jpg" width="450px" height="450px"/>
+			<p class="caption">
+			Five things every traveler should have ready to go for a trip:
+			<br>
+			1. A durable, lightweight, smooth-rolling wheelie bag that holds a lot and doesn't tip over easily, like the REI Stratocruiser 25", which comes with handy backpack straps and a detachable day pack. Four-wheeled bags are even less likely to tip over, but they're slower to walk with and prone to rolling away when you're standing in line somewhere. 
+			<br>
+			2. A slim digital camera that turns on and focuses quickly; Canon's PowerShot series does both jobs well. 
+			<br>
+			3. Duct tape — because you'll inevitably wish you had some. Packing a whole roll is annoying, so take a 2-ft. strip and wrap it around a pencil or marker. 
+			<br>
+			4. A copy of your passport — you'll probably never need it, but if you lose your passport, having a copy greatly expedites the process of getting a new one. A scanned copy that you e-mail to yourself works fine. 
+			<br>
+			5. One-quart Ziploc bags for getting liquids, gels and toiletries through airport security — pack a few extra ones in case one rips or someone you're traveling with forgets to bring one.
+			</p>
+			<br>
+		</li>
+	</ul>
+</div>
+</div>
+
+
+<div class="line">
+	<h2> Articles </h2>
+</div>
+
+
+<div id="articles">
+	
+	<div class="a1"><a href="http://www.travelandleisure.com/slideshows/worlds-best-cities" TARGET="_blank"><img src="images/top10.jpg"/></a></div>
+
+
+	<div class="a1"><a href="http://www.travelandleisure.com/slideshows/worlds-best-islands" TARGET="_blank"><img src="images/malta.jpg"/></a></div>
+
+
+	<div class="a2"><a href="http://www.travelandleisure.com/slideshows/trips-of-a-lifetime" TARGET="_blank"><img src="images/lifetime.jpg"/></a></div>
+
+
+	<div class="a2"><a href="http://www.travelandleisure.com/slideshows/worlds-best-hotels" TARGET="_blank"><img src="images/hotels.jpg"/></a></div>
+
 </div>
 
 
@@ -127,7 +207,19 @@
 		<div id="four">
 			<a href="http://www.Pinterest.com"><img src="Icons/Tumblr.png"></a>
 		</div>
-	</div>
+
+<div class="mail">
+	<h5>Join our mailing list for the latest in travel news!</h5>
+					<tr>
+						<td>Email:</td>
+						<td><input type="text"></td>
+					</tr>
+	
+						<td>
+						<input type="button" value="Submit"/>
+						</td>
+				<h6>&copy; Zalini 2015</h6>
+</div>
 </div>
 
 	
@@ -148,14 +240,11 @@
 
 
 
-		//$("#pic1, #pic2, #pic3, #pic4, #pic5").mouseover(function() {
-		//	$(this).css("opacity", "0.5");
-		//	$("#featuredNames").fadeIn();
-	//	});
+		$(".imgcap").mouseover(function(){
+			$(this).fadeOut();
+		});
 
-		//$(".imgcap").mouseover(function(){
-		//	$(this).fadeOut();
-		//});
+
 
 		 $("#pic1").mouseover(function() {
 		 	$(this).css("opacity", "0.5");
@@ -185,6 +274,14 @@
 		$("#pic1, #pic2, #pic3, #pic4, #pic5").mouseleave(function() {
 			$(this).css("opacity","1" );
 		});
+
+
+ 		$('.flexslider').flexslider({
+   			 animation: "slide",
+   			 slideshowSpeed:  10000
+ 		});	
+
+
 	});
 
 </script>
