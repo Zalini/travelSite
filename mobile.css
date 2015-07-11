@@ -1,0 +1,145 @@
+@media all and (max-width: 480px){
+
+
+body {
+	background: white;
+}
+
+#title{
+	font-size: 10px;
+	text-align: center;
+	background-image: url(images/beachCover.jpg);
+}
+
+.cover{
+	display: none;
+}
+
+.line {
+	width: 100%;
+}
+
+#gallery h2 {
+	font-size: 18px;
+}
+
+.names {
+	display: none;
+}
+
+.box {
+	display: none;
+}
+
+#pics img{
+	display: inline-block;
+	width: 60px;
+	height: 70px;
+	border-radius: 50%;s
+}
+
+.btn {
+	display: none;
+}
+ 
+.exit {
+  	display: none;
+}
+
+#navi {
+	display: none;
+}
+
+#footer {
+	clear:both;
+	background-color: rgba(38, 194, 204, 0.2);
+	margin-top: 100px;
+}
+
+#footer img {
+	float:left;
+	width: 30px;
+	height: 30px;
+}
+
+#footer h6 {
+	text-align: center;
+}
+
+.mail {
+	border: solid 5px #d3d3d3;
+}
+
+#content  {
+	font-size: 14px;
+	width: 100%;
+	margin: 0 auto;
+	padding-top: 10px;
+	text-align: center;
+}
+
+#content h1 {
+	font-size: 14px;
+}
+
+.contentspace{
+	margin: 0px;
+}
+
+#featuredNames {
+	display: none;
+}
+
+#featuredNames2 {
+	display: none;
+}
+
+#featuredNames3 {
+	display: none;
+}
+
+#featuredNames4 {
+	display: none;
+}
+
+#featuredNames5 {
+	display: none;
+}
+
+#articles img {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
+
+
+/*Tips*/
+#background {
+	background-image: none;
+	background-color: rgb(38, 194, 204);
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	margin-top: 5%;
+}
+
+.flexslider img {
+	margin: 0 auto;
+	margin-top: 20px;
+	padding-top: 20px;
+	width: 20%;
+	height: 70px;
+}
+
+.caption {
+  width: 100%;
+  margin: 0 auto;
+  color: rgba(0, 0, 0, .6);
+  margin-top: 10px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+
+
+}
