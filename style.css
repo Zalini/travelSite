@@ -22,61 +22,14 @@ body {
 /*Header*/
 #title {
 	font-family: caviarItalic;
-	font-size: 2em;
 	color: rgba(38, 194, 204, 0.8);
 	background-color: rgba(38, 194, 204, 0.2);
-	height: 100px;
-	padding: 2.5%;
+	height: 80px;
+	padding: 1%;
 }
 
-.btn {
-	background: #1E718C;
-	opacity: 0.4;
-	width: 50px;
-	height: 40px;
-	position: absolute;
-	z-index:1000;
-	top: 55px;
-	right: 10px;
-	color: white;
-	font-size: 1em;
-}
- 
-.exit {
-	background: #1E718C;
-	opacity: 0.4;
-	width: 50px;
-	height: 40px;
-	position: absolute;
-	z-index:1000;
-	top: 55px;
-	right: 10px;
-	color: white;
-	font-size: 1em;
-  	display: none;
-}
-
-#navi {
-	background: #1E718C;
-	opacity: 0.3;
-	position: absolute;
-	z-index: 1000;
-	top: 55px;
-	right: 65px;
-	font-size: 20px;
-	width: 400px;
-	display: none;
-}
-
-#navi li {
-	display: inline;
-	padding: 10px;
-	text-decoration: none;  
-	color: white;
-}
-
-#navi li:hover {
-	color: black;
+#title h1{
+	font-size: 1.5em;
 }
 
 a {
@@ -86,14 +39,16 @@ a {
 	color: #1E718C;
 }
 
-a:hover {
+/*a:hover {
 	color: #7CD6D2;
 	text-decoration: none;
-}
+}*/
 
 
 
 /*Content*/
+
+
 .cover {
 	font-family: caviarItalic;
 	font-size: 100px;
@@ -101,7 +56,7 @@ a:hover {
 	background-image: url(images/beachCover.jpg);
 	opacity: 0.7;
 	padding: 5px;
-	height: 510px;
+	height: 390px;
 	width: 100%;
 	text-align: center;
 }
@@ -118,106 +73,54 @@ a:hover {
 	font-size: 30px;
 }
 
+#arrow { 
+	display: none;
+}
+
+#lineee{
+	border-bottom: solid black 5px;
+	margin-bottom: 1em;
+
+}
+
+.titles{
+	list-style: none;
+	display: inline;
+	padding: 10%;
+}
+
+#pics {
+	width: 100%;
+
+}
+
 #pics img{
 	display: inline-block;
-	width: 280px;
+	width: 25%;
+	/*padding: 1.6%;*/
 	height: 250px;
-	margin:0 auto;
 }
 
-#content  {
-	font-size: 20px;
-	width: 900px;
-	margin: 0 auto;
-	padding-top: 100px;
-}
-
-#content h1 {
-	font-size: 40px;
-}
-
-.contentspace{
-	margin-top: 100px;
-}
-
-
-#featuredNames {
-	color: black;
-	margin-left: 30px;
+#contentBox {
+	float: right;
+	width: 55%;
+	font-size: 1em;
 	display: none;
 }
 
-#featuredNames2 {
-	color: black;
-	margin-left: 330px;
-	display: none;
+
+
+
+#pics img:hover{
+	opacity: 0.8;
 }
 
-#featuredNames3 {
-	color: black;
-	margin-left: 630px;
-	display: none;
-}
-
-#featuredNames4 {
-	color: black;
-	margin-left: 930px;
-	display: none;
-}
-
-#featuredNames5 {
-	color: black;
-	margin-left: 1230px;
-	display: none;
-}
-
-#articles img {
-	width: 350px;
-	height: 300px;
-	margin: 0 auto;
-	border-radius: 50%;
-}
 
 .a1 {
 	float:left; 
 	margin: 3px;
-}
-
-
-
-/*Tips*/
-#background {
-	background-color: rgba(38, 194, 204, 0.9);
-	width: 60%;
-	margin: 0 auto;
-	height: 50%;
-	text-align: center;
-}
-
-.flexslider img {
-	margin: 0 auto;
-	height: 200px;
-	width: 250px;
-}
-
-.caption {
-  width: 50%;
-  margin: 0 auto;
-  color: rgba(0, 0, 0, .6);
-  font-size: 1.1em;
-  text-align: center;
- 
-}
-
-.flex-control-paging {
 	display: none;
 }
-
-.flex-direction-nav {
-	list-style-type: none;
-	padding-top: 0px;
-	margin-top: 0px;
-} 
 
 
 /*Footer*/
@@ -244,5 +147,15 @@ a:hover {
 #articles h3 {
 	font-family: caviarDream;
 	color: black;
+}
+
+
+
+
+
+
+.contentspace, #hideForNow{
+	display: none;
+
 }
 

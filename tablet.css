@@ -1,0 +1,60 @@
+@media all and (max-width: 800px){
+
+body{
+	background: black;
+}
+
+
+
+
+/*.btn {
+	background: #1E718C;
+	opacity: 0.4;
+	width: 50px;
+	height: 40px;
+	position: absolute;
+	z-index:1000;
+	top: 55px;
+	right: 10px;
+	color: white;
+	font-size: 1em;
+}
+ 
+.exit {
+	background: #1E718C;
+	opacity: 0.4;
+	width: 50px;
+	height: 40px;
+	position: absolute;
+	z-index:1000;
+	top: 55px;
+	right: 10px;
+	color: white;
+	font-size: 1em;
+  	display: none;
+}
+
+#navi {
+	background: #1E718C;
+	opacity: 0.3;
+	position: absolute;
+	z-index: 1000;
+	top: 55px;
+	right: 65px;
+	font-size: 20px;
+	width: 400px;
+	display: none;
+}
+
+#navi li {
+	display: inline;
+	padding: 10px;
+	text-decoration: none;  
+	color: white;
+}
+
+#navi li:hover {
+	color: black;
+}*/
+
+}
