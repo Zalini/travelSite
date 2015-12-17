@@ -3,14 +3,14 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Traveler's diary</title>
-	<link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
+	<link rel="stylesheet" href="http://normalize-css.googlecode.com/svn/trunk/normalize.css" />
 	<link rel="stylesheet" href="bootstrap.css">
+	<link rel="stylesheet" href="slick/slick.css"/>
+	<link rel="stylesheet" href="slick/slick-theme.css"/>
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="tablet.css">
 	<link rel="stylesheet" href="mobile.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-	<script src="http://cdn.jsdelivr.net/velocity/1.2.3/velocity.min.js"></script>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 
@@ -22,7 +22,6 @@
 
 
 <div class="cover">
-	<h1>Time for Adventure</h1>
 </div>
 
 
@@ -31,103 +30,97 @@
 </div>
 
 
-<a id="arrow" href="index.html"><img src="images/arrow.png" height="50px" ></a>
+<a id="arrow" href=""><img src="images/arrow.png" height="50px" ></a>
+
 
 <div id="contentBox">
 	<h3 class="blurb"></h3>
 </div>
 
 
-<div id="lineee">
+<div>
 	<ul>
-		<li class="titles">Curaçao</li>
-		<li class="titles">Sweden</li>
-		<li class="titles">Malaysia</li>
-		<li class="titles">St. Lucia</li>
+		<li class="titles col-xs-3 col-md-3 ">Curaçao</li>
+		<li class="titles col-xs-3 col-md-3 ">Sweden</li>
+		<li class="titles col-xs-3 col-md-3 ">Malaysia</li>
+		<li class="titles col-xs-3 col-md-3 ">St. Lucia</li>
 	</ul>
-	
 </div>
 
 
 <div id="pics">
+	<h1 class="mobileTitles col-xs-12">Curaçao</h1>
+	<img id="pic1" class="col-xs-12 col-md-3 " 
+		 data-description="Curaçao:<br>Home to more than 35 captivating beaches, a diverse heritage spanning 55 different cultures, 'live and let live' attitude and unrivaled European architecture; Curaçao remains one of the most exceptional islands of the region. Its capital city, Willemstad — a UNESCO World Heritage site — with its iconic colorful Handelskade backdrop and roster of museums, monuments, flavorful restaurants and shopping, was selected in 2013 as one of the Top 5 Cities in the Caribbean by Condé Nast Traveler's readers.  Curaçao's natural beauty, pristine diving and snorkeling sites are a favorite with divers and adventure seekers, and its beaches and idyllic weather, situated on the outer fringes of the Hurricane Belt, has won it further accolade and recognition."
+		src="images/curacao.jpg" />
 
-	
-		<img id="pic1" class= "col-md-3" 
-			 data-description="Curaçao:<br>Home to more than 35 captivating beaches, a diverse heritage spanning 55 different cultures, 'live and let live' attitude and unrivaled European architecture; Curaçao remains one of the most exceptional islands of the region. Its capital city, Willemstad — a UNESCO World Heritage site — with its iconic colorful Handelskade backdrop and roster of museums, monuments, flavorful restaurants and shopping, was selected in 2013 as one of the Top 5 Cities in the Caribbean by Condé Nast Traveler's readers.  Curaçao's natural beauty, pristine diving and snorkeling sites are a favorite with divers and adventure seekers, and its beaches and idyllic weather, situated on the outer fringes of the Hurricane Belt, has won it further accolade and recognition."
-			src="images/curacao.jpg" />
+	<h1 class="mobileTitles col-xs-12">Sweden</h1>
+	<img id="pic2" class= "col-xs-12 col-md-3 " 
+		data-description="Sweden:<br>In some ways, visiting Sweden feels like walking right into a fashion or home-decor magazine. There are no boring outfits on the streets of Stockholm, and the care with which houses, cottages, cafes and public spaces are decorated and kept up throughout the country is truly inspiring. But Swedish style is never too showy; form and function are tightly linked in this society known for valuing moderation, practicality, order, simple lines and clever designs. Whether you decide to shop for your own versions or just enjoy the scenery, it’s hard not to fall for the cool aesthetics of this place."
+		src="images/sweden.png" /> 
 
+	<h1 class="mobileTitles col-xs-12">Malaysia</h1>
+	<img id="pic3" class="col-xs-12 col-md-3 "
+		data-description="Malaysia:<br>To know Malaysia is to love Malaysia - a bubbling, bustling melting-pot of races and religions where Malays, Indians, Chinese and many other ethnic groups live together in peace and harmony. Our multiculturalism has made Malaysia a gastronomical paradise and home to hundreds of colourful festivals. It's no wonder that we love celebrating and socialising. As a people, Malaysians are very relaxed, warm and friendly. 
 
-	
-		<img id="pic2" class= "col-md-3" 
-			data-description="Sweden:<br>In some ways, visiting Sweden feels like walking right into a fashion or home-decor magazine. There are no boring outfits on the streets of Stockholm, and the care with which houses, cottages, cafes and public spaces are decorated and kept up throughout the country is truly inspiring. But Swedish style is never too showy; form and function are tightly linked in this society known for valuing moderation, practicality, order, simple lines and clever designs. Whether you decide to shop for your own versions or just enjoy the scenery, it’s hard not to fall for the cool aesthetics of this place."
-			src="images/sweden.png" /> 
-		
+		One of Malaysia's key attractions is its extreme contrasts which further add to this theme of 	‘diversity’. Towering skyscrapers look down upon wooden houses built on stilts while five-star hotels sit just metres away from ancient reefs. 
 
-		
-		<img id="pic3" class= "col-md-3"
-			data-description="Malaysia:<br>To know Malaysia is to love Malaysia - a bubbling, bustling melting-pot of races and religions where Malays, Indians, Chinese and many other ethnic groups live together in peace and harmony. Our multiculturalism has made Malaysia a gastronomical paradise and home to hundreds of colourful festivals. It's no wonder that we love celebrating and socialising. As a people, Malaysians are very relaxed, warm and friendly. 
+		Rugged mountains reach dramatically for the sky while their rainforest-clad slopes sweep down to floodplains teeming with forest life. Cool highland hideaways roll down to warm, sandy beaches and rich, humid mangroves."
+		src="images/kuala.jpg" /> 
 
-			One of Malaysia's key attractions is its extreme contrasts which further add to this theme of 	‘diversity’. Towering skyscrapers look down upon wooden houses built on stilts while five-star hotels sit just metres away from ancient reefs. 
-
-			Rugged mountains reach dramatically for the sky while their rainforest-clad slopes sweep down to floodplains teeming with forest life. Cool highland hideaways roll down to warm, sandy beaches and rich, humid mangroves."
-			src="images/kuala.jpg" /> 
-	
-		
-		<img id="pic4" class= "col-md-3" 
-			data-description="St. Lucia:<br>Where can you wake up to a symphony of birds and drive through a volcano? Only on St. Lucia island! St. Lucia stands apart from the rest of the Caribbean islands thanks to its varied landscape and diverse culture and cuisine, which is distinguished by African, Indian, Caribbean, British, Spanish and French influences. You can explore everything from the Piton Mountains and rainforest to the Sulphur Springs of Soufriere and the Caribbean coral reef on this 238 square-mile island in paradise. There are so many reasons to choose St. Lucia island!
-			 The active traveler can snorkel in the refreshing Caribbean Sea, hike to the top of the Gros Piton or Petite Piton peaks, or take advantage of a wide range of water sports available at their St. Lucia Resort. The foodie can indulge in fresh local flavors by stopping at roadside stands or dining at five-star restaurants. Romantic couples can relax on the white sand of a pristine beach or in a mud bath before going on a one-of-a-kind date at one of St. Lucia’s music or cultural festivals.  Whatever your preference, your St. Lucia island vacation will be nothing but smooth sailing!"
-			src="images/lucia.jpg" />
-		
+	<h1 class="mobileTitles col-xs-12">St. Lucia</h1>
+	<img id="pic4" class="col-xs-12 col-md-3 " 
+		data-description="St. Lucia:<br>Where can you wake up to a symphony of birds and drive through a volcano? Only on St. Lucia island! St. Lucia stands apart from the rest of the Caribbean islands thanks to its varied landscape and diverse culture and cuisine, which is distinguished by African, Indian, Caribbean, British, Spanish and French influences. You can explore everything from the Piton Mountains and rainforest to the Sulphur Springs of Soufriere and the Caribbean coral reef on this 238 square-mile island in paradise. There are so many reasons to choose St. Lucia island!
+		 The active traveler can snorkel in the refreshing Caribbean Sea, hike to the top of the Gros Piton or Petite Piton peaks, or take advantage of a wide range of water sports available at their St. Lucia Resort. The foodie can indulge in fresh local flavors by stopping at roadside stands or dining at five-star restaurants. Romantic couples can relax on the white sand of a pristine beach or in a mud bath before going on a one-of-a-kind date at one of St. Lucia’s music or cultural festivals.  Whatever your preference, your St. Lucia island vacation will be nothing but smooth sailing!"
+		src="images/lucia.jpg" />
 </div>
 
 
-
-<div id="hideForNow">
-<div class="line">
-	<h2 id="articleBreak"> Articles </h2>
+<div class="line2 col-md-12">
 </div>
 
+<div class="articlesCarousel col-md-8">
+	<div>
+		<a href="http://www.travelandleisure.com/slideshows/trips-of-a-lifetime" TARGET="_blank"><h3>Trips of a lifetime</h3></a>
+		<img src="images/lifetime.jpg"/>
+	</div>
 
-<div id="articles">
-	<div class="a1">
+	<div>
+		<a href="http://www.travelandleisure.com/slideshows/worlds-best-islands" TARGET="_blank">
+		<h3>World's best islands</h3></a>
+		<img src="images/malta.jpg"/>
+	</div>
+
+	<div>
+		<a href="http://www.travelandleisure.com/slideshows/worlds-best-hotels" TARGET="_blank">
+		<h3>World's best hotels</h3></a>
+		<img src="images/hotels.jpg"/>
+	</div>
+
+	<div>
+		<a href="http://www.travelandleisure.com/slideshows/worlds-best-cities" TARGET="_blank">
 		<h3>Top 10 Cities to visit</h3>
-			<a href="http://www.travelandleisure.com/slideshows/worlds-best-cities" TARGET="_blank">
-				<img src="images/top10.jpg"/></a>
-	</div>
-
-	<div class="a1">
-		<h3>World's best islands</h3>
-			<a href="http://www.travelandleisure.com/slideshows/worlds-best-islands" TARGET="_blank">
-				<img src="images/malta.jpg"/></a>
-	</div>
-
-	<div class="a1">
-		<h3>Trips of a lifetime</h3>
-			<a href="http://www.travelandleisure.com/slideshows/trips-of-a-lifetime" TARGET="_blank">
-				<img src="images/lifetime.jpg"/></a>
-	</div>
-
-	<div class="a1">
-		<h3>World's best hotels</h3>
-			<a href="http://www.travelandleisure.com/slideshows/worlds-best-hotels" TARGET="_blank">
-				<img src="images/hotels.jpg"/></a>
+		</a><img src="images/top10.jpg"/>
 	</div>
 </div>
-</div>
+
 
 <div id="footer">
 	<div id="social">
 		<div class="icons">
 			<a href="http://www.facebook.com"><img src="Icons/Facebook.png"></a>
 		</div>
+
 		<div class="icons">
 			<a href="http://www.twitter.com"><img src="Icons/Twitter.png"></a>
 		</div>
+
 		<div class="icons">
 			<a href="http://www.instagram.com"><img src="Icons/Instagram.png"></a>
 		</div>
+
 		<div class="icons">
-			<a href="http://www.Pinterest.com"><img src="Icons/Tumblr.png"></a>
+			<a href="http://www.Pinterest.com"><img src="Icons/pinterest.png"></a>
 		</div>
 
 		<div class="mail">
@@ -143,85 +136,10 @@
 		</div>
 </div>
 
-	
 
-<script>
-	$(document).ready(function() {
-
-//click the image and the corresponding blurb slides in
-			$("img").on("click", function(){
-			$("#contentBox, .blurb").show().velocity({ translateY: [ 0, 300 ] },
-			  { duration: 1000 });
-
-
-//image titles move to the left
-			// $(".titles").css({"display": "block", "padding": "0px"});
-//hide list
-			$(".titles").hide();
-			$("#arrow").show();
-
-//image slides in from the left
-			$(this).velocity({ translateX: [ 200, 0 ] },
-			  { duration: 1000 });
-//hide the siblings of this particular image
-			$(this).siblings("img").hide();
-
-//get the blurb for the image clicked by following the attribute
-			var description = $(this).attr("data-description");
-				$(".blurb").html(description);
-			});
-
-
-
-//click the title and go to the corresponding blurb
-			$(".titles").on("click", function(){
-				$(this).attr("href", "index.html")
-
-			});
-			
-
-});
-
-
-
-
-		// $("img").on("click", function(){
-		// 	$(this).velocity({ left: 250 }, 800, "easeOutQuad");
-		// 	$(this).siblings().hide();
-		// 	var dataName = $(this).attr("data-name");
-		// 	var dataDescription = $(this).attr("data-description");
-		
-		// 	$(".country").html(dataName);
-		// 	$(this).siblings().hide();
-		// });
-
-		// $("img").on("scroll", function(){
-		// 	$(this).velocity({ left: 0 }, 1000, "easeInSine");
-		// 	$(this).siblings().fadeIn(3000);
-		// });
-
-
-
-
-
-// $('.cover').click(function(event) {
-//     // Preventing default action of the event
-//     event.preventDefault();
-//     // Getting the height of the document
-//     var n = $(document).height();
-//     $('html, body').animate({ scrollTop: n }, 10000);
-
-// });
-
-		// $("body, html").scroll(function(){
-		// 	$("#arrow").show();
-
-		// })
-
-
-
-</script>
-
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="http://cdn.jsdelivr.net/velocity/1.2.3/velocity.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script type="text/javascript" src="scripts.js"></script>
 </body>
 </html>

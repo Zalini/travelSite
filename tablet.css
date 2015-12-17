@@ -1,60 +1,138 @@
-@media all and (max-width: 800px){
-
-body{
-	background: black;
-}
+@media all and (max-width: 990px){
 
 
-
-
-/*.btn {
-	background: #1E718C;
-	opacity: 0.4;
-	width: 50px;
-	height: 40px;
-	position: absolute;
-	z-index:1000;
-	top: 55px;
-	right: 10px;
-	color: white;
-	font-size: 1em;
-}
- 
-.exit {
-	background: #1E718C;
-	opacity: 0.4;
-	width: 50px;
-	height: 40px;
-	position: absolute;
-	z-index:1000;
-	top: 55px;
-	right: 10px;
-	color: white;
-	font-size: 1em;
-  	display: none;
-}
-
-#navi {
-	background: #1E718C;
-	opacity: 0.3;
-	position: absolute;
-	z-index: 1000;
-	top: 55px;
-	right: 65px;
-	font-size: 20px;
-	width: 400px;
+.mobileTitles {
 	display: none;
 }
 
-#navi li {
-	display: inline;
-	padding: 10px;
-	text-decoration: none;  
-	color: white;
+
+#title {
+	height: 60px;
+	padding: 1%;	
 }
 
-#navi li:hover {
-	color: black;
+#title h1{
+	font-size: 1.5em;
+}
+
+
+/*Content*/
+.cover {
+	height: 300px;
+	width: 100%;
+}
+
+.line {
+	background-color: rgba(38, 194, 204, 0.5);
+ 	width: 100%;
+	margin: 0 auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.line h2 {
+	text-align: center;
+	font-family: caviar;
+	font-size: 1.7em;
+	color: rgba(0, 0, 0, 0.8);
+}
+
+.line2 {
+	display: none;
+}
+
+#arrow { 
+	display: none;
+}
+
+#contentBox {
+	float: right;
+	width: 55%;
+	font-size: 1em;
+	display: none;
+}
+
+
+
+/*Pictures and titles*/
+.titles{
+	list-style: none;
+	display: inline-block;
+	font-size: 1.5em;
+	margin-top: 20px;
+}
+
+
+.mobileTitles {
+	display: none;
+}
+/*#pics {
+	width: 100%;
+
 }*/
+
+#pics img{
+	display: inline-block;
+	width: 25%;
+	height: 190px;
+}
+
+
+
+/*articles*/
+.articlesCarousel {
+	font-family: caviarDream;
+	color: black;
+	width: 90%;
+	margin-top: 5%;
+	clear: both;
+	text-align: center;
+}
+
+.articlesCarousel img{
+	width: 90%;
+	height: 400px;
+	margin: 0 auto;
+}
+
+.slick-slider{
+	position: relative;
+	left: 50px;
+	margin-bottom: 80px;
+
+}
+
+.slick-next {
+	background: rgba(38, 194, 204, 0.7);
+	border-radius: 50%;
+}
+
+.slick-prev {
+	background: rgba(38, 194, 204, 0.7);
+	border-radius: 50%;
+}
+
+
+/*Footer*/
+#footer {
+	clear:both;
+	background-color: rgba(38, 194, 204, 0.2);
+}
+
+#footer img {
+	width: 30px;
+	height: 30px;
+}
+
+#footer h6 {
+	text-align: center;
+	color: rgba(38, 194, 204, 0.8);
+}
+
+.icons {
+	float: right;
+}
+
+
 
 }
