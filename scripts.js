@@ -18,6 +18,8 @@ $(document).ready(function() {
 
 //hide the siblings of this particular image
 	$(this).siblings("img").hide();
+	$(this).hide();
+	$(".blurb").css({"line-height":"1.5em", "color": "#383838"})
 
 //get the blurb for the image clicked by following the attribute
 	var description = $(this).attr("data-description");
@@ -38,5 +40,20 @@ $(document).ready(function() {
 
 
 
+$("#submitBtn").on("click", function(){
+	var emailInformation = $("#emailInfo").val();
+
+	if(emailInformation === "jo" ) {
+		alert("it is true");
+	} else {
+		alert("it is false");
+	}
 
 });
+
+
+});
+
+
+
+

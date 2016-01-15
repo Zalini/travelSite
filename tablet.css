@@ -1,4 +1,4 @@
-@media all and (max-width: 990px){
+@media all and (max-width: 1050px){
 
 
 .mobileTitles {
@@ -18,7 +18,7 @@
 
 /*Content*/
 .cover {
-	height: 300px;
+	height: 150px;
 	width: 100%;
 }
 
@@ -46,8 +46,6 @@
 }
 
 #contentBox {
-	float: right;
-	width: 55%;
 	font-size: 1em;
 	display: none;
 }
@@ -72,10 +70,35 @@
 }*/
 
 #pics img{
-	display: inline-block;
-	width: 25%;
-	height: 190px;
+	display: block;
+	width: 50%;
+	height: 275px;
+
 }
+
+#hideForDesktop {
+	display: block;
+
+}
+
+.hideForTablet {
+	display: none;
+
+}
+
+
+
+
+/*.testFloat {
+	float: left;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.testFloat img {
+	width: 50%;
+}
+*/
 
 
 
@@ -129,9 +152,6 @@
 	color: rgba(38, 194, 204, 0.8);
 }
 
-.icons {
-	float: right;
-}
 
 
 

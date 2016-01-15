@@ -5,7 +5,7 @@ body {
 }
 
 #title{
-	font-size: 10px;
+	font-size: 14px;
 	text-align: center;
 	background-image: url(images/beachCover.jpg);
 }
@@ -58,6 +58,7 @@ body {
 	color: black;
 	width: 100%;
 	text-align: center;
+	font-size: 1em;
 
 }
 
@@ -114,5 +115,10 @@ body {
 	border-radius: 50%;
 }
 
+/*footer*/
+#footer {
+	background: white;
+	margin-top: 30%;
+}
 
 }
