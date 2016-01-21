@@ -16,6 +16,14 @@
 
 
 <body>
+
+<div id="emailConfirmBox">
+	<div id="thankYou">
+		<button id="exitBtn">X</button>
+		<h1></h1>
+	</div>
+</div>
+
 <div id="title">
 	<h1>Traveler's diary</h1>
 </div>
@@ -86,7 +94,6 @@
 		src="images/lucia.jpg" />
 </div>
 
-
 <div class="line2 col-md-12">
 </div>
 
@@ -116,11 +123,15 @@
 </div>
 
 
+<div id="upArrow">
+<p>&#8963;</p>
+</div>
+
+
 <div id="footer">
 		<div class="mail">
 			<h5>Join our mailing list for the best in travel ideas and resources!</h5>
 				<form>
-				
 				<tr>
 					<td>Name:</td>
 					<td><input type="text" id="contactName"></td>
@@ -130,8 +141,10 @@
 				</tr>
 
 				<tr>
-					<td><input type="button" value="Submit" id="submitBtn"/></td>
+					<td><input type="submit" value="Submit" id="submitBtn"/></td>
 				</tr>
+
+				<p id="alertText"></p>
 				</form>
 		</div>
 <br>

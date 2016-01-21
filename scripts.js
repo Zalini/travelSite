@@ -34,22 +34,74 @@ $(document).ready(function() {
 		  autoPlay: true,
 		  autoplaySpeed: 1000,
 		  arrows: true,
-		  
 		});
 
 
-
-
-$("#submitBtn").on("click", function(){
-	var emailInformation = $("#emailInfo").val();
-
-	if(emailInformation === "jo" ) {
-		alert("it is true");
-	} else {
-		alert("it is false");
-	}
-
+$("#upArrow p").click(function(){
+	$(window).scrollTop(0);
 });
+
+
+/***********For the email and name confirmation***********/
+var nameTest = false;
+var emailTest = false;
+$("#emailConfirmBox").hide();
+
+$("#contactName").focusout(function(){
+	checkName();
+});
+
+$("#emailInfo").focusout(function(){
+	checkEmail();
+});
+
+
+function checkName(){
+	var contactNameLength = $("#contactName").val().length;
+	if(contactNameLength > 1){
+		nameTest = true;
+	}
+} 
+
+
+function checkEmail(){
+	var emailLength = $("#emailInfo").val().length;
+	if(emailLength < 6 || emailLength >15){
+		$("#alertText").text("Please type in a valid email address");
+		emailTest = true;
+	} else {
+		$("#alertText").hide();
+	}
+} 
+
+
+$("form").submit(function(event){
+	checkName();
+	checkEmail();
+	var contactName = $("#contactName").val();
+	$("#emailConfirmBox h1").text("thank you"+ " " + contactName + " " + "for subscribing!");
+	// alert("Thank you" + ' ' + contactName);
+	$("#emailConfirmBox").show();
+	event.preventDefault();
+});
+
+$("#exitBtn").on("click", function(){
+	$("#emailConfirmBox").hide();
+});
+
+// $("#submitBtn").on("click", function(){
+// 	var nameInfoBox = $("contactName").val();
+// 	var emailInfoBox = $("emailInfo").val();
+// 	if(nameInfoBox && emailInfoBox == ""){
+// 		$("#alertText").html("missing text");
+// 	}
+
+// });
+
+// if(errorName && errorEmail == false){
+// 	alert("Yippie, great news to come your way!")
+// }
+
 
 
 });
