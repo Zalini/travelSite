@@ -4,7 +4,10 @@
 	<meta charset="UTF-8">
 	<title>Traveler's diary</title>
 	<link rel="stylesheet" href="http://normalize-css.googlecode.com/svn/trunk/normalize.css" />
-	<link rel="stylesheet" href="bootstrap.css">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 	<link rel="stylesheet" href="slick/slick.css"/>
 	<link rel="stylesheet" href="slick/slick-theme.css"/>
 	<link rel="stylesheet" href="style.css">
@@ -13,21 +16,20 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-
-
 <body>
-
 <div id="emailConfirmBox">
 	<div id="thankYou">
 		<button id="exitBtn">X</button>
 		<h1></h1>
+		<img src="icons/tree.png" width="70px" height="70px"/>
+		<img src="icons/plane.png" width="70px" height="70px"/>
+		<img src="icons/tower.png" width="70px" height="70px"/>
 	</div>
 </div>
 
 <div id="title">
 	<h1>Traveler's diary</h1>
 </div>
-
 
 <div class="cover">
 </div>
@@ -37,14 +39,11 @@
 	<h2>Featured Destinations</h2>
 </div>
 
-
 <a id="arrow" href=""><img src="images/arrow.png" height="50px" ></a>
-
 
 <div id="contentBox">
 	<h3 class="blurb"></h3>
 </div>
-
 
 <div>
 	<ul>
@@ -57,13 +56,11 @@
 	</ul>
 </div>
 
-
 <div id="pics">
 	<h1 class="mobileTitles col-xs-12">Curaçao</h1>
 	<img id="pic1" class="col-xs-12 col-md-3" 
 		 data-description="Curaçao:<br>Home to more than 35 captivating beaches, a diverse heritage spanning 55 different cultures, 'live and let live' attitude and unrivaled European architecture; Curaçao remains one of the most exceptional islands of the region. Its capital city, Willemstad — a UNESCO World Heritage site — with its iconic colorful Handelskade backdrop and roster of museums, monuments, flavorful restaurants and shopping, was selected in 2013 as one of the Top 5 Cities in the Caribbean by Condé Nast Traveler's readers.  Curaçao's natural beauty, pristine diving and snorkeling sites are a favorite with divers and adventure seekers, and its beaches and idyllic weather, situated on the outer fringes of the Hurricane Belt, has won it further accolade and recognition."
 		src="images/curacao.jpg" />
-
 	<h1 class="mobileTitles col-xs-12">Sweden</h1>
 	<img id="pic2" class= "col-xs-12 col-md-3" 
 		data-description="Sweden:<br>In some ways, visiting Sweden feels like walking right into a fashion or home-decor magazine. There are no boring outfits on the streets of Stockholm, and the care with which houses, cottages, cafes and public spaces are decorated and kept up throughout the country is truly inspiring. But Swedish style is never too showy; form and function are tightly linked in this society known for valuing moderation, practicality, order, simple lines and clever designs. Whether you decide to shop for your own versions or just enjoy the scenery, it’s hard not to fall for the cool aesthetics of this place."
@@ -86,7 +83,6 @@
 
 		Rugged mountains reach dramatically for the sky while their rainforest-clad slopes sweep down to floodplains teeming with forest life. Cool highland hideaways roll down to warm, sandy beaches and rich, humid mangroves."
 		src="images/kuala.jpg" /> 
-
 	<h1 class="mobileTitles col-xs-12">St. Lucia</h1>
 	<img id="pic4" class="col-xs-12 col-md-3" 
 		data-description="St. Lucia:<br>Where can you wake up to a symphony of birds and drive through a volcano? Only on St. Lucia island! St. Lucia stands apart from the rest of the Caribbean islands thanks to its varied landscape and diverse culture and cuisine, which is distinguished by African, Indian, Caribbean, British, Spanish and French influences. You can explore everything from the Piton Mountains and rainforest to the Sulphur Springs of Soufriere and the Caribbean coral reef on this 238 square-mile island in paradise. There are so many reasons to choose St. Lucia island!
@@ -102,19 +98,16 @@
 		<a href="http://www.travelandleisure.com/slideshows/trips-of-a-lifetime" TARGET="_blank"><h3>Trips of a lifetime</h3></a>
 		<img src="images/lifetime.jpg"/>
 	</div>
-
 	<div>
 		<a href="http://www.travelandleisure.com/slideshows/worlds-best-islands" TARGET="_blank">
 		<h3>World's best islands</h3></a>
 		<img src="images/malta.jpg"/>
 	</div>
-
 	<div>
 		<a href="http://www.travelandleisure.com/slideshows/worlds-best-hotels" TARGET="_blank">
 		<h3>World's best hotels</h3></a>
 		<img src="images/hotels.jpg"/>
 	</div>
-
 	<div>
 		<a href="http://www.travelandleisure.com/slideshows/worlds-best-cities" TARGET="_blank">
 		<h3>Top 10 Cities to visit</h3>
@@ -122,53 +115,48 @@
 	</div>
 </div>
 
-
 <div id="upArrow">
 <p>&#8963;</p>
 </div>
 
-
 <div id="footer">
-		<div class="mail">
-			<h5>Join our mailing list for the best in travel ideas and resources!</h5>
-				<form>
-				<tr>
-					<td>Name:</td>
-					<td><input type="text" id="contactName"></td>
-					
-					<td>Email:</td>
-					<td><input type="email" id="emailInfo"></td>
-				</tr>
-
-				<tr>
-					<td><input type="submit" value="Submit" id="submitBtn"/></td>
-				</tr>
-
-				<p id="alertText"></p>
-				</form>
-		</div>
+	<div class="mail">
+		<h5>Join our mailing list for the best in travel ideas and resources!</h5>
+		<form>
+		<tr>
+			<td>Name:</td>
+			<td><input type="text" id="contactName"></td>
+			<td>Email:</td>
+			<td><input type="email" id="emailInfo"></td>
+		</tr>
+		<tr>
+			<td><input type="submit" value="Submit" id="submitBtn"/></td>
+		</tr>
+		<p id="alertText"></p>
+		</form>
+	</div>
 <br>
-	<div id="social">
-		<div class="icons">
-			<a href="http://www.facebook.com" target="_blank"><img src="Icons/Facebook.png"></a>
-		</div>
 
-		<div class="icons">
-			<a href="http://www.twitter.com" target="_blank"><img src="Icons/Twitter.png"></a>
-		</div>
-
-		<div class="icons">
-			<a href="http://www.instagram.com" target="_blank"><img src="Icons/Instagram.png"></a>
-		</div>
-
-		<div class="icons">
-			<a href="http://www.Pinterest.com" target="_blank"><img src="Icons/pinterest.png"></a>
-		</div>
-		<h6>&copy; Zalini 2015</h6>
+<div id="social">
+	<div class="icons">
+		<a href="http://www.facebook.com" target="_blank"><img src="Icons/facebook.png"></a>
+	</div>
+	<div class="icons">
+		<a href="http://www.twitter.com" target="_blank"><img src="Icons/twitter.png"></a>
+	</div>
+	<div class="icons">
+		<a href="http://www.instagram.com" target="_blank"><img src="Icons/Instagram.png"></a>
+	</div>
+	<div class="icons">
+		<a href="http://www.Pinterest.com" target="_blank"><img src="Icons/pinterest.png"></a>
+	</div>
+	<h6>&copy; Zalini 2015</h6>
 </div>
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 <script src="http://cdn.jsdelivr.net/velocity/1.2.3/velocity.min.js"></script>
 <script type="text/javascript" src="slick/slick.min.js"></script>
 <script type="text/javascript" src="scripts.js"></script>

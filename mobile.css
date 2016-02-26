@@ -14,44 +14,13 @@ body {
 	display: none;
 }
 
-#title h1{
-	font-size: 2.5em;
-}
-
-
-/*Content*/
-.line {
-	background-color: rgba(38, 194, 204, 0.5);
- 	width: 100%;
-	margin: 0 auto;
-	margin-top: 10px;
-	margin-bottom: 10px;
-}
-
-.line h2 {
-	text-align: center;
-	font-family: caviar;
-	font-size: 1em;
-	color: rgba(0, 0, 0, 0.8);
-}
-
 .line2 {
-	width: 100%;
-	height: 3px;
-	background: black;
-	margin-top: 5%;
-	display: none;
-}
-
-#arrow { 
 	display: none;
 }
 
 #contentBox {
 	float: left;
 	width: 100%;
-	font-size: 1em;
-	/*display: none;*/
 }
 
 .blurb {
@@ -59,10 +28,7 @@ body {
 	width: 100%;
 	text-align: center;
 	font-size: 1em;
-
 }
-
-
 
 /*Pictures and titles*/
 .titles{
@@ -88,21 +54,19 @@ body {
 .articlesCarousel {
 	font-family: caviarDream;
 	color: black;
-	width: 93%;
+	width: 70%;
 	margin-top: 1%;
-	display: none;
 }
 
 .articlesCarousel img{
 	width: 100%;
-	height: 630px;
+	height: 270px;
 }
 
 .slick-slider{
 	position: relative;
-	left: 50px;
+	left: 30px;
 	margin-bottom: 125px;
-
 }
 
 .slick-next {
@@ -115,10 +79,15 @@ body {
 	border-radius: 50%;
 }
 
+
+#thankYou {
+	height: 50%;
+	width: 100%;
+}
+
 /*footer*/
 #footer {
 	background: white;
 	margin-top: 30%;
 }
-
 }

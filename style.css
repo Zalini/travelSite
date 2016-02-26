@@ -40,7 +40,6 @@
 	font-size: 2.5em;
 }
 
-
 /*Content*/
 .cover {
 	background-image: url(images/beachCover.jpg);
@@ -85,31 +84,21 @@
 	margin: 0 auto;
 }
 
-
-
 /*Pictures and titles*/
 .titles{
 	list-style: none;
 	display: inline-block;
 	font-size: 1.5em;
-	margin-top: 20px;
-	
+	margin-top: 20px;	
 }
-
 
 #hideForDesktop {
 	display: none;
-
 }
-
 
 .mobileTitles {
 	display: none;
 }
-/*#pics {
-	width: 100%;
-
-}*/
 
 #pics img{
 	display: inline-block;
@@ -120,7 +109,6 @@
 #pics img:hover{
 	opacity: 0.8;
 }
-
 
 /*articles*/
 .articlesCarousel {
@@ -139,7 +127,6 @@
 	position: relative;
 	left: 50px;
 	margin-bottom: 125px;
-
 }
 
 .slick-next {
@@ -151,7 +138,6 @@
 	background: rgba(38, 194, 204, 0.7);
 	border-radius: 50%;
 }
-
 
 /*Footer*/
 #footer {
@@ -177,7 +163,6 @@
 	text-align: center;
 }
 
-
 #emailConfirmBox {
 	background: rgba(255, 255, 255, 0.5);
 	width: 100%;
@@ -191,17 +176,17 @@
 	z-index: 1000;
 }
 
+#exitBtn {
+	float: left;
+}
+
 #thankYou {
 	border: 5px solid rgb(38, 194, 204);
 	background-color: white;
-
 	position: relative;
 	top: calc(20% - 10px);
-
-	height: 250px;
-	width: 300px;
-
+	height: 40%;
+	width: 40%;
 	margin: 0 auto;
-
 	text-align: center;
 }

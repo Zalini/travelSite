@@ -5,7 +5,6 @@
 	display: none;
 }
 
-
 #title {
 	height: 60px;
 	padding: 1%;	
@@ -14,7 +13,6 @@
 #title h1{
 	font-size: 1.5em;
 }
-
 
 /*Content*/
 .cover {
@@ -50,8 +48,6 @@
 	display: none;
 }
 
-
-
 /*Pictures and titles*/
 .titles{
 	list-style: none;
@@ -60,20 +56,14 @@
 	margin-top: 20px;
 }
 
-
 .mobileTitles {
 	display: none;
 }
-/*#pics {
-	width: 100%;
-
-}*/
 
 #pics img{
 	display: block;
 	width: 50%;
 	height: 275px;
-
 }
 
 #hideForDesktop {
@@ -85,22 +75,6 @@
 	display: none;
 
 }
-
-
-
-
-/*.testFloat {
-	float: left;
-	width: 100%;
-	margin: 0 auto;
-}
-
-.testFloat img {
-	width: 50%;
-}
-*/
-
-
 
 /*articles*/
 .articlesCarousel {
@@ -120,9 +94,8 @@
 
 .slick-slider{
 	position: relative;
-	left: 50px;
+	left: 35px;
 	margin-bottom: 80px;
-
 }
 
 .slick-next {
@@ -134,7 +107,6 @@
 	background: rgba(38, 194, 204, 0.7);
 	border-radius: 50%;
 }
-
 
 /*Footer*/
 #footer {
@@ -151,8 +123,4 @@
 	text-align: center;
 	color: rgba(38, 194, 204, 0.8);
 }
-
-
-
-
 }
