@@ -98,16 +98,6 @@
 	margin-bottom: 80px;
 }
 
-.slick-next {
-	background: rgba(38, 194, 204, 0.7);
-	border-radius: 50%;
-}
-
-.slick-prev {
-	background: rgba(38, 194, 204, 0.7);
-	border-radius: 50%;
-}
-
 /*Footer*/
 #footer {
 	clear:both;

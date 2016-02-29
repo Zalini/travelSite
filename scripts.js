@@ -25,9 +25,9 @@ $(".articlesCarousel").slick({
 	dots: true,
 	infinite: true,
 	fade: true,
-	autoPlay: true,
-	autoplaySpeed: 1000,
-	arrows: true,
+	autoplay: true,
+	autoplaySpeed: 2500,
+	arrows: false,
 	swipe: true
 });
 
