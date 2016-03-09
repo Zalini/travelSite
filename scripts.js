@@ -5,22 +5,18 @@ $(document).ready(function() {
 	  { duration: 1000 });
 
 //hide list and articles
-	$(".titles").hide();
+	$(".titles, .articlesCarousel, .mobileTitles, #upArrow, .cover, .line, #footer").hide();
 	$("#arrow").show();
-	$("#articlesCarousel").hide();
-	$(".mobileTitles").hide();
-
 //hide the siblings of this particular image
 	$(this).siblings("img").hide();
 	$(this).hide();
 	$(".blurb").css({"line-height":"1.5em", "color": "#383838"})
-
 //get the blurb for the image clicked by following the attribute
 	var description = $(this).attr("data-description");
 		$(".blurb").html(description);
 	});
 
-
+//Slick slider carousel
 $(".articlesCarousel").slick({
 	dots: true,
 	infinite: true,
@@ -30,11 +26,10 @@ $(".articlesCarousel").slick({
 	arrows: false,
 	swipe: true
 });
-
+//Click arrow at the bottom and page scrolls up
 $("#upArrow p").click(function(){
 	$(window).scrollTop(0);
 });
-
 
 /***********For the email and name confirmation***********/
 $("#emailConfirmBox").hide();

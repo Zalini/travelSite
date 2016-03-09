@@ -1,14 +1,4 @@
 @font-face {
-	font-family: caviar;
-	src: url(caviar/CaviarDreams_Bold.ttf);
-}
-
-@font-face {
-	font-family: caviarItalic;
-	src: url(caviar/CaviarDreams_Italic.ttf);
-}
-
-@font-face {
 	font-family: caviarDream;
 	src: url(caviar/CaviarDreams.ttf);
 }
@@ -17,10 +7,6 @@
 	font-family: caviarDream;
 	padding: 0px;
 	margin: 0px;
-}
-
-body {
-	margin-right: 0px;
 }
 
 #upArrow{
@@ -33,22 +19,22 @@ body {
 
 /*Header*/
 #title {
-	font-family: caviarItalic;
+	font-style: italic;
 	color: rgba(38, 194, 204, 0.8);
 	background-color: rgba(38, 194, 204, 0.2);
-	height: 75px;
+	height: 60px;
 	padding: 1%;	
 }
 
 #title h1{
-	font-size: 2.5em;
+	font-size: 25px;
 }
 
 /*Content*/
 .cover {
 	background-image: url(images/beachCover.jpg);
 	opacity: 0.7;
-	height: 300px;
+	height: 280px;
 	width: 100%;
 }
 
@@ -62,7 +48,6 @@ body {
 
 .line h2 {
 	text-align: center;
-	font-family: caviar;
 	font-size: 1.7em;
 	color: rgba(0, 0, 0, 0.8);
 }
@@ -116,8 +101,6 @@ body {
 
 /*articles*/
 .articlesCarousel {
-	font-family: caviarDream;
-	color: black;
 	width: 93%;
 	margin-top: 1%;
 }
@@ -145,8 +128,10 @@ body {
 
 /*Footer*/
 #footer {
-	clear:both;
+	clear: both;
 	background-color: rgba(38, 194, 204, 0.2);
+	position: relative;
+	bottom: 0px;
 }
 
 #footer img {
@@ -193,4 +178,153 @@ body {
 	width: 40%;
 	margin: 0 auto;
 	text-align: center;
+}
+
+
+@media all and (max-width: 1050px){
+/*Header*/
+#title {
+	height: 60px;
+	padding: 1%;	
+}
+
+#title h1{
+	font-size: 1.5em;
+}
+
+/*Content*/
+.cover {
+	height: 150px;
+	width: 100%;
+}
+
+.line2 {
+	display: none;
+}
+
+#contentBox {
+	display: none;
+}
+
+.blurb {
+	width: 90%;
+	margin: 0 auto;
+	font-size: 18px;
+}
+
+/*Pictures and titles*/
+#pics img{
+	display: block;
+	width: 50%;
+	height: 275px;
+}
+
+#hideForDesktop {
+	display: block;
+}
+
+.hideForTablet {
+	display: none;
+}
+
+/*articles*/
+.articlesCarousel {
+	width: 90%;
+	margin-top: 5%;
+	clear: both;
+	text-align: center;
+}
+
+.articlesCarousel img{
+	width: 90%;
+	height: 400px;
+	margin: 0 auto;
+}
+
+.slick-slider{
+	position: relative;
+	left: 35px;
+	margin-bottom: 80px;
+}
+
+#thankYou {
+	height: 40%;
+	width: 100%;
+}
+}
+
+@media all and (max-width: 640px){
+
+body {
+	background: white;
+}
+
+#title{
+	font-size: 14px;
+	text-align: center;
+	background-image: url(images/beachCover.jpg);
+}
+
+.cover{
+	display: none;
+}
+
+#contentBox {
+	float: left;
+	width: 100%;
+}
+
+.blurb {
+	color: black;
+	width: 100%;
+	text-align: center;
+	font-size: 1em;
+}
+
+/*Pictures and titles*/
+.titles{
+	display: none;
+}
+
+#pics img{
+	display: block;
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+}
+
+.mobileTitles {
+	color: black;
+	font-size: 20px;
+	border-top: solid black 1px;
+	border-bottom: solid black 1px;
+	display: block;
+}
+
+.articlesCarousel {
+	display: block;
+	width: 100%;
+	height: auto;
+	margin: 0px;
+}
+
+.articlesCarousel img{
+	width: 100%;
+	height: auto;
+}
+
+.slick-slider{
+	position: relative;
+	left: 0px;
+	margin-bottom: 50px;
+}
+
+#upArrow {
+	display: none;
+}
+
+#footer {
+	background: white;
+	margin-top: 30%;
+}
 }
