@@ -180,6 +180,21 @@
 	text-align: center;
 }
 
+#thankYou img {
+	width: 10%;
+	height: auto;
+}
+
+.emailInput {
+	display: block;
+}
+
+#social {
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+
 
 @media all and (max-width: 1050px){
 /*Header*/
@@ -260,7 +275,7 @@ body {
 }
 
 #title{
-	font-size: 14px;
+	font-size: 17px;
 	text-align: center;
 	background-image: url(images/beachCover.jpg);
 }

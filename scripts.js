@@ -1,8 +1,7 @@
 $(document).ready(function() {
 //click the image and the corresponding blurb slides in
 	$("#pics img").on("click", function(){
-	$("#contentBox, .blurb").show().velocity({ translateX: [ 0, 300 ] },
-	  { duration: 1000 });
+	$("#contentBox, .blurb").fadeIn(500);
 
 //hide list and articles
 	$(".titles, .articlesCarousel, .mobileTitles, #upArrow, .cover, .line, #footer").hide();
@@ -64,12 +63,11 @@ $("form").submit(function(event){
 	checkEmail();
 	var contactName = $("#contactName").val();
 	$("#emailConfirmBox h1").text("Thank you"+ " " + contactName + " " + "for subscribing!");
-	$("#emailConfirmBox").show();
+	$("#emailConfirmBox").fadeIn(500);
 	event.preventDefault();
 });
 
 $("#exitBtn").on("click", function(){
-	$("#emailConfirmBox").hide();
+	$("#emailConfirmBox").fadeOut(500);
 });
-
 });
