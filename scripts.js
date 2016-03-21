@@ -46,6 +46,8 @@ function checkName(){
 	var contactName = $("#contactName").val();
 	if(contactNameLength > 1){
 		$("#alertText").text("You're awesome " + contactName + " !");
+	} else {
+		return false
 	}
 } 
 
