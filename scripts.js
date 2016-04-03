@@ -4,7 +4,7 @@ $(document).ready(function() {
 	$("#contentBox, .blurb").fadeIn(500);
 
 //hide list and articles
-	$(".titles, .articlesCarousel, .mobileTitles, #upArrow, .cover, .line, #footer").hide();
+	$(".titles, .articlesCarousel, .mobileTitles, #upArrow, .cover, .line, .line2, #footer").hide();
 	$("#arrow").show();
 //hide the siblings of this particular image
 	$(this).siblings("img").hide();
