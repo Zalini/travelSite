@@ -22,8 +22,8 @@
 	font-style: italic;
 	color: rgba(38, 194, 204, 0.8);
 	background-color: rgba(38, 194, 204, 0.2);
-	height: 60px;
-	padding: 1%;	
+	height: 50px;
+	padding: 1px;	
 }
 
 #title h1{
@@ -34,7 +34,7 @@
 .cover {
 	background-image: url(images/beachCover.jpg);
 	opacity: 0.7;
-	height: 250px;
+	height: 200px;
 	width: 100%;
 }
 
