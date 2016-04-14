@@ -1,18 +1,23 @@
 $(document).ready(function() {
 //click the image and the corresponding blurb slides in
 	$("#pics img").on("click", function(){
-	$("#contentBox, .blurb").fadeIn(500);
+	// $(this).css({"width":"100%", "height": "100%", "opacity": "1"});
+	$("#contentBox, .blurb, #arrow").fadeIn(200);
 
-//hide list and articles
-	$(".titles, .articlesCarousel, .mobileTitles, #upArrow, .cover, .line, .line2, #footer").hide();
-	$("#arrow").show();
-//hide the siblings of this particular image
-	$(this).siblings("img").hide();
-	$(this).hide();
-	$(".blurb").css({"line-height":"1.5em", "color": "#383838"})
+	$(".blurb").css({"line-height":"1.5em", "color": "#383838", "width": "60%"});
 //get the blurb for the image clicked by following the attribute
 	var description = $(this).attr("data-description");
 		$(".blurb").html(description);
+	});
+
+	$("#contentBox").on("dblclick", function(){
+		$(this).fadeOut();
+		$("#pics img").siblings("img").show();
+	});
+
+	$("#arrow").on("click", function(){
+		$("#contentBox").fadeOut(200);
+		$(this).hide();
 	});
 
 //Slick slider carousel
@@ -31,8 +36,6 @@ $("#upArrow p").click(function(){
 });
 
 /***********For the email and name confirmation***********/
-$("#emailConfirmBox").hide();
-
 $("#contactName").focusout(function(){
 	checkName();
 });

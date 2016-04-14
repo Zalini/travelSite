@@ -17,6 +17,10 @@
 	margin-right: 15px;
 }
 
+#arrow {
+	display: none;
+}
+
 /*Header*/
 #title {
 	font-style: italic;
@@ -59,12 +63,17 @@
 	margin-top: 5%;
 }
 
-#arrow { 
-	display: none;
-}
-
 #contentBox {
-	font-size: 1em;
+	background: rgba(255, 255, 255, 1);
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	padding: 0px;
+	margin: 0px;
+	overflow: hidden;
+	z-index: 1000;
 	display: none;
 }
 
@@ -108,6 +117,10 @@
 .articlesCarousel img{
 	width: 100%;
 	height: 630px;
+}
+
+.articlesCarousel a {
+	cursor: default;
 }
 
 .slick-slider{
@@ -163,6 +176,7 @@
 	margin: 0px;
 	overflow: hidden;
 	z-index: 1000;
+	display: none;
 }
 
 #exitBtn {
@@ -214,10 +228,6 @@
 }
 
 .line2 {
-	display: none;
-}
-
-#contentBox {
 	display: none;
 }
 
